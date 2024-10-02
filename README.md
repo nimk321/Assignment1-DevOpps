@@ -41,7 +41,6 @@ The CI/CD pipeline is set up using GitHub Actions and follows this workflow:
 
 
 
-A Brief Report
 In my implementation, I focused on translating the provided Business Domain/Subject Under Discussion (SUD) into a well-defined system structure that aligns with the specified business processes and user requirements. The business domain primarily revolves around managing and organizing services for an online learning platform, which involves handling user roles, course management, and transaction processing.
 
 I began by identifying key business objects such as Users, Courses, Enrollments, and Payments. These objects represent the main entities in the system and were modeled with their attributes and relationships in mind. For instance, Users interact with Courses through Enrollments, and Payments manage financial transactions. The structure adheres closely to the business rules, ensuring that each interaction aligns with real-world workflows.
