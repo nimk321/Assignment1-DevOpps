@@ -1,7 +1,7 @@
 import { Patient } from './entities/Patient';
 import { Doctor } from './entities/Doctor';
 import { EHR } from './entities/EHR';
-import { TelemedicineConsultation } from './entities/TelemedicineConsultation';
+import { TelemedicineConsultation } from './entities/TelemedicineCommunication';
 import { Prescription } from './entities/Prescription';
 import { InsuranceClaim } from './entities/InsuranceClaim';
 
