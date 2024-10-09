@@ -1,52 +1,87 @@
-# Assignment1-DevOpps
+# Decentralized Health Care Management System
 
-# Branching Strategy
+## Table of Contents
 
-- `main`: The production branch where stable code is merged and deployed.
-- `develop`: The branch for active development. CI pipeline runs for testing and builds.
-- Feature branches: Feature-specific development branches that are merged into `develop` via pull requests.
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-# TypeScript Application CI/CD Pipeline
+## Introduction
 
-## Setup Instructions
+The Decentralized Health Care Management System is a TypeScript-based application designed to facilitate healthcare processes, including patient registration, telemedicine consultations, prescription management, insurance claims processing, and research data sharing. The system aims to improve accessibility and efficiency in healthcare management.
 
-1. Clone the repository.
+## Features
+
+- **Patient Registration**: Register new patients and manage their profiles.
+- **Telemedicine Consultation**: Conduct remote consultations between patients and doctors.
+- **Prescription Management**: Issue and track prescriptions for patients.
+- **Insurance Claim Processing**: Manage and submit insurance claims for reimbursement.
+- **Research Data Sharing**: Share anonymized patient data for research purposes.
+
+## Technologies Used
+
+- TypeScript
+- Javascript
+- HTML
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd decentralized-health-care-management-system
+   ```
+
 2. Install dependencies:
    ```bash
    npm install
    ```
+
 3. Build the project:
    ```bash
    npm run build
    ```
-4. Run tests:
-   ```bash
-   npm test
-   ```
 
-## CI/CD Pipeline Workflow
+## Usage
 
-The CI/CD pipeline is set up using GitHub Actions and follows this workflow:
-- On every push to the `develop` branch, the following steps are executed:
-  1. Install dependencies.
-  2. Run linter and tests.
-  3. Build the application.
-  4. Build and push the Docker image to DockerHub.
-  5. (Production only) Deploy the app to AWS ECS.
+To start the application, run:
+```bash
+npm start
+```
 
-## DevOps Principles Applied
-- Continuous Integration: Automating the build and testing process to ensure code quality.
-- Continuous Deployment: Automatically pushing updates to production upon merging to the main branch.
-- Secret Management: Sensitive credentials are stored securely in GitHub Secrets.
+You can also run the application in development mode using:
+```bash
+npm run dev
+```
 
+## Project Structure
 
+```
+/decentralized-health-care-management-system
+│
+├── /src                   # Source code directory
+│   ├── /entities          # Contains entity classes (Patient, Doctor, EHR, etc.)
+│   ├── /functions         # Contains business processes (PatientRegistration, etc.)
+│   └── index.ts          # Entry point of the application
+│
+├── package.json           # Project metadata and dependencies
+├── tsconfig.json          # TypeScript configuration
+└── README.md              # Project documentation
+```
 
-In my implementation, I focused on translating the provided Business Domain/Subject Under Discussion (SUD) into a well-defined system structure that aligns with the specified business processes and user requirements. The business domain primarily revolves around managing and organizing services for an online learning platform, which involves handling user roles, course management, and transaction processing.
+## Contributing
 
-I began by identifying key business objects such as Users, Courses, Enrollments, and Payments. These objects represent the main entities in the system and were modeled with their attributes and relationships in mind. For instance, Users interact with Courses through Enrollments, and Payments manage financial transactions. The structure adheres closely to the business rules, ensuring that each interaction aligns with real-world workflows.
+Contributions are welcome! If you'd like to contribute, please fork the repository and create a pull request.
 
-The implementation includes defining use cases for common business scenarios like user registration, course enrollment, and payment processing. Each use case includes actors, such as Students and Instructors, and describes their interactions with the system in terms of data flow and processing logic.
+## License
 
-Additionally, I focused on UML diagrams, such as Class Diagrams and Use Case Diagrams, to visually depict the system’s architecture and interactions between objects. This helps in providing a clear view of the relationships within the domain and ensures that the implementation can evolve with future business needs.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-Finally, the implementation also incorporates basic validation rules and security measures to ensure data integrity and protect sensitive user information, such as payment details. This ensures that the system is both functional and secure while remaining aligned with the broader business goals defined in the SUD.
+---
+
+Feel free to adjust the sections or add any additional information specific to your project!
