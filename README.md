@@ -33,8 +33,10 @@ The Decentralized Health Care Management System is a TypeScript-based applicatio
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/nimk321/Assignment1-DevOpps.git
+   cd Desktop
+   mkdir decentralized-health-care-management-system
    cd decentralized-health-care-management-system
+   git clone https://github.com/nimk321/Assignment1-DevOpps.git
    ```
 
 2. Install dependencies:
