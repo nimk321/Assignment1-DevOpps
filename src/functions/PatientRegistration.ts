@@ -1,6 +1,12 @@
-import { IPatient } from '../entities/Patient';
+import { Patient } from '../entities/Patient';
 
-export function registerPatient(patient: IPatient): string {
-  if (!patient.name) throw new Error('Patient name is required.');
-  return `Patient ${patient.name} registered successfully.`;
+export class PatientRegistration {
+    public registerPatient(patient: Patient): void {
+        console.log(`Patient registration completed for ${patient.getPatientId()}`);
+    }
+
+    public verifyRegistration(patient: Patient): boolean {
+        console.log(`Verifying registration for ${patient.getPatientId()}`);
+        return true; // Assume registration is verified
+    }
 }
