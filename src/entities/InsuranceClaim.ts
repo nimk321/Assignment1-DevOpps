@@ -47,8 +47,8 @@ export class InsuranceClaim {
 
     public verifyCoverage(): boolean {
         console.log(`Verifying coverage for claim ID ${this.claimId}`);
-        // Logic for coverage verification
-        return true; // Assume coverage is verified
+        
+        return true; 
     }
 }
 
