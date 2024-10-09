@@ -12,7 +12,7 @@ export class EHR {
         this.allergies = allergies;
         this.medications = medications;
     }
-//
+
     public getRecordId(): string {
         return this.recordId;
     }
