@@ -84,6 +84,3 @@ Contributions are welcome! If you'd like to contribute, please fork the reposito
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
----
-
-Feel free to adjust the sections or add any additional information specific to your project!
