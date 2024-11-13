@@ -82,7 +82,7 @@ npm run dev
 │   └── .dockerignore            # Files and directories to exclude from Docker image
 │
 ├── /tests                       # Test files for Jest
-│   └── example.test.ts          # Example Jest test file
+│   └── patient.test.ts          # Example Jest test file
 │
 ├── package.json                 # Project metadata and dependencies
 ├── tsconfig.json                # TypeScript configuration
@@ -90,7 +90,6 @@ npm run dev
 │   └── /workflows
 │       └── ci.yml               # CI/CD pipeline configuration
 ├── README.md                    # Project documentation
-└── LICENSE                      # License file
 ```
 
 ## CI/CD Pipeline
@@ -141,9 +140,5 @@ Tests are also automatically executed as part of the GitHub Actions pipeline.
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute, please fork the repository and create a pull request. Be sure to follow the contribution guidelines and ensure that tests are updated when modifying functionality.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
 ---
