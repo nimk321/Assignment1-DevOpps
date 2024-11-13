@@ -12,7 +12,6 @@
 - [Docker Integration](#docker-integration)
 - [Testing](#testing)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
