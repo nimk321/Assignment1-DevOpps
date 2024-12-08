@@ -8,8 +8,6 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -76,11 +74,6 @@ npm run dev
 └── README.md              # Project documentation
 ```
 
-## Contributing
-
-Contributions are welcome! If you'd like to contribute, please fork the repository and create a pull request.
-
-## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
