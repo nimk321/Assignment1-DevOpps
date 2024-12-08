@@ -1,11 +1,10 @@
 {
   "name": "decentralized-health-care-management-system",
   "version": "1.0.0",
-  "type": "module",
   "description": "A decentralized health care management system built with TypeScript.",
   "main": "dist/index.js",
   "scripts": {
-    "start": "ts-node ./src/index.ts",
+    "start": "node dist/index.js",
     "build": "tsc",
     "dev": "ts-node src/index.ts"
   },
